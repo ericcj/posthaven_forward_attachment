@@ -1,11 +1,12 @@
 posthaven_forward_attachment
 ============================
 
-forwards new posthaven post images as email attachments daily.  to setup, first get heroku and mandrill accounts then:
+forwards new photo blog images as email attachments daily.  i use this to send posthaven photos to a nixplay frame, but it should work for other feeds too.  to setup, first sign up for heroku and clone this repo then:
 
 # create
 cd posthaven_forward_attachment
 heroku create
+git push heroku master
 
 # setup
 heroku addons:add mandrill
